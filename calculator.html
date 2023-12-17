@@ -165,7 +165,13 @@ box-shadow:  10px 10px 10px #464646,
 
         $("#calculate").click(function(){
             display.style.color="orange"
+           
             try{
+                if(display.value==143){
+                    alert("               Luv you shruthi")
+            }else if(display.value==123){
+                alert("                   miss you")
+            }
             display.value=eval(display.value)
             // display.value.style.color="orange"
             }catch(error){
