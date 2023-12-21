@@ -113,6 +113,7 @@
         text-decoration: none;
         color: #07374a;
         padding: 1rem;
+        bottom: 1%;
     }
 
     /* ////........About Me........//// */
@@ -771,10 +772,10 @@
         <header class="header">
             <nav class="navbar">
                 <div class="navbar-container container">
-                    <div>
-                       <!-- <img src="https://santhosh7blog.files.wordpress.com/2023/09/inshot_20231221_134449678404977265340420645.png?w=1024"> -->
-                       <h1 class="navbar-brand">Santhosh K</h1>
-                    </div>
+                 <div>
+                     <!-- <img src="https://santhosh7blog.files.wordpress.com/2023/09/inshot_20231221_134449678404977265340420645.png?w=1024">
+                       <h1 class="navbar-brand">Santhosh K</h1> -->
+                    </div> 
                     <ul class="menu-items">
                         <li><a href="#about">About</a></li>
                         <li><a href="#contact-me">Contact</a></li>
@@ -972,12 +973,15 @@
 
                 $("#name").mouseover(function(){
                     $("#name").css({
+                         "transition":"0.5s",
+                        // "text-decoration":"underline",
                         "filter":"drop-shadow(10px 8px 15px black)"
                     })
                 })
 
                  $("#name").mouseleave(function(){
                     $("#name").css({
+                        "text-decoration":"none",
                         "filter":"drop-shadow(0px 0px 0px black)"
                     })
                 })
