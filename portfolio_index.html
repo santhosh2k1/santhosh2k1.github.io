@@ -62,13 +62,13 @@
 
     .menu-items a {
         text-decoration: none;
-        color: #f0f0e6;
+        color: black;
         font-size: 1.2rem;
         padding: 0.3rem;
     }
 
     .menu-items a:hover {
-        border-bottom: 2px solid #f0f0e6;
+        border-bottom: 2px solid black;
     }
 
     .navbar .logo {
@@ -95,7 +95,7 @@
     }
 
     .home-content .name p {
-        color: #f0f0e6;
+        /* color: #f0f0e6; */
         font-size: 1.5rem;
     }
 
@@ -752,10 +752,11 @@
         }
     }
 
-    .menu-items li,.name p{
+    .name p{
         font-weight: normal;
-/*         filter: drop-shadow(0.5px 1px 1px black) */
-        
+        /* filter: drop-shadow(0.5px 1px 1px black) */
+        color: black;
+        /* display: none; */
     }
 
     .name img:hover{
@@ -986,9 +987,8 @@
 
                 $("#name").mouseover(function(){
                     $("#name").css({
-                         "transition":"0.5s",
                         // "text-decoration":"underline",
-                        "filter":"drop-shadow(10px 8px 15px black)"
+                        "filter":"drop-shadow(5px 8px 15px black)"
                     })
                 })
 
