@@ -101,7 +101,7 @@
 
     .angle-down-icon {
         position: absolute;
-        bottom: 10%;
+        bottom: 1%;
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 2rem;
@@ -347,6 +347,15 @@
         margin-right: 1.7rem;
     }
 
+     .name img {
+        height: 330px;
+        width: 380px;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0 20px 10px -10px rgb(37 41 52 / 31%);
+        margin-right: 1.7rem;
+    }
+
     .proj-1 .proj1-details {
         width: 32rem;
     }
@@ -583,6 +592,12 @@
             margin-bottom: 0.5rem;
         }
 
+        .name img {
+            height: 230px;
+            width: 290px;
+            margin-bottom: 0.5rem;
+        }
+
         .proj-2 {
             display: flex;
             justify-content: center;
@@ -645,6 +660,12 @@
         }
 
         .proj-1 img {
+            height: 240px;
+            width: 290px;
+            margin-bottom: 0.5rem;
+        }
+
+        .name img {
             height: 240px;
             width: 290px;
             margin-bottom: 0.5rem;
@@ -751,7 +772,8 @@
             <nav class="navbar">
                 <div class="navbar-container container">
                     <div>
-                        <h1 class="navbar-brand">Santhosh K</h1>
+                       <!-- <img src="https://santhosh7blog.files.wordpress.com/2023/09/inshot_20231221_134449678404977265340420645.png?w=1024"> -->
+                       <h1 class="navbar-brand">Santhosh K</h1>
                     </div>
                     <ul class="menu-items">
                         <li><a href="#about">About</a></li>
@@ -762,10 +784,12 @@
             </nav>
             <div class="home-content" id="home-page">
                 <div class="name">
-                    <h1>Hi, I'm Santhosh</h1>
+                   <img src="https://santhosh7blog.files.wordpress.com/2023/09/inshot_20231221_1530562124849241232454447973.png?w=1024">
+                 <br>      <h1 id="name">Hi, I'm Santhosh</h1>
                     <p>A Front-End developer</p>
                 </div>
-                <div class="angle-down-icon">
+                <br>
+                <div class="angle-down-icon" >
                     <a href="#about"><i class="fas fa-angle-down"></i></a>
                 </div>
             </div>
@@ -780,7 +804,7 @@
                         <img src="https://i.postimg.cc/Hx4nChpH/fbavatar-1630400663387-6838396024049256103.png"
                             alt="image" />
                         <p>
-                            I am a new graduate with a great passion for programming.I am passionate about delivering
+                            I am a new graduate fresher with a great passion for programming.I am passionate about delivering
                             solutions that add value to people's lives and at the same time challenge me. Improved my
                             skills as a Front-End and Back-End developer.
 
@@ -856,24 +880,24 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- <div class="work-arrow-2">
+                                     <!-- <div class="work-arrow-2">
                                         <p>
                                             <a href="#my-works">Check out my work <i class="fas fa-arrow-down"></i></a>
                                         </p>
-                                    </div> -->
+                                    </div>  -->
                                 </div>
                             </div>
                         </div>
                     </div>
         </section>
-        <!-- <section id="my-works">
+         <!-- <section id="my-works">
             <div class="portfolio">
                 <div class="proj-heading">
                     <h1>Portfolio</h1>
                 </div>
                 <div class="portfolio-content container">
                     <div class="proj-1">
-                        <img src="https://i.postimg.cc/qM9TjGTG/Screenshot-80.png">
+                        <img src="https://santhosh7blog.files.wordpress.com/2023/09/inshot_20231221_134449678404977265340420645.png?w=1024">
                         <div class="proj1-details">
                             <i class="fab fa-html5"></i>
                             <i class="fab fa-css3-alt"></i>
@@ -913,8 +937,8 @@
                     </div>
                 </div>
             </div> 
-            </div>  <------- note
-        </section> -->
+            </div>  
+        </section>  -->
         <div class="contact" id="contact-me">
             <div class="container">
                 <div class="contact-content">
@@ -937,8 +961,33 @@
             </div>
         </div>
         <!-- JAVASCRIPT -->
-        <script src="app.js"></script>
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 
+ 
+        <script >
+
+            $(document).ready(function(){
+
+
+                $("#name").mouseover(function(){
+                    $("#name").css({
+                        "filter":"drop-shadow(10px 8px 15px black)"
+                    })
+                })
+
+                 $("#name").mouseleave(function(){
+                    $("#name").css({
+                        "filter":"drop-shadow(0px 0px 0px black)"
+                    })
+                })
+
+
+            })
+            
+
+        </script>
+        
     </body>
 
     </html>
