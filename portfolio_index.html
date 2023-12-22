@@ -68,7 +68,8 @@
     }
 
     .menu-items a:hover {
-        border-bottom: 2px solid black;
+        border-bottom: 2px solid white;
+        filter: drop-shadow(0.5px 0.5px 20px #363636)
     }
 
     .navbar .logo {
@@ -755,14 +756,15 @@
     .name p{
         font-weight: normal;
         /* filter: drop-shadow(0.5px 1px 1px black) */
-        color: black;
+        color: white;
+         filter: drop-shadow(0.5px 0.5px 20px #363636)  
         /* display: none; */
     }
 
-    .name img:hover{
+    .name img:hover,#name:hover{
         /* border: 2px solid black; */
         transition:1s;
-         filter: drop-shadow(0.5px 1px 1px #363636) 
+         filter: drop-shadow(0.5px 0.5px 30px #363636) 
          
     }
 </style>
@@ -790,10 +792,11 @@
                      <!-- <img src="https://santhosh7blog.files.wordpress.com/2023/09/inshot_20231221_134449678404977265340420645.png?w=1024">
                        <h1 class="navbar-brand">Santhosh K</h1> -->
                     </div> 
-                    <ul class="menu-items">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact-me">Contact</a></li>
-                        <li><a href="https://drive.google.com/file/d/1sqm42ChGJvcgyUn_yp_tjla1yTbjdfWe/view?usp=drivesdk">Resume Download</a></li>
+                    <ul style=" 
+         filter: drop-shadow(0.5px 0.5px 20px #363636)  " class="menu-items">
+                        <li><a style=" color: white;" href="#about">About</a></li>
+                        <li><a style=" color: white;" href="#contact-me">Contact</a></li>
+                        <li><a style=" color: white;" href="https://drive.google.com/file/d/1sqm42ChGJvcgyUn_yp_tjla1yTbjdfWe/view?usp=drivesdk">Resume Download</a></li>
                     </ul>
                 </div>
             </nav>
@@ -982,25 +985,25 @@
  
         <script >
 
-            $(document).ready(function(){
+            // $(document).ready(function(){
 
 
-                $("#name").mouseover(function(){
-                    $("#name").css({
-                        // "text-decoration":"underline",
-                        "filter":"drop-shadow(5px 8px 15px black)"
-                    })
-                })
+            //     $("#name").mouseover(function(){
+            //         $("#name").css({
+            //             // "text-decoration":"underline",
+            //             "filter":"drop-shadow(5px 8px 15px black)"
+            //         })
+            //     })
 
-                 $("#name").mouseleave(function(){
-                    $("#name").css({
-                        "text-decoration":"none",
-                        "filter":"drop-shadow(0px 0px 0px black)"
-                    })
-                })
+            //      $("#name").mouseleave(function(){
+            //         $("#name").css({
+            //             "text-decoration":"none",
+            //             "filter":"drop-shadow(0px 0px 0px black)"
+            //         })
+            //     })
 
 
-            })
+            // })
             
 
         </script>
